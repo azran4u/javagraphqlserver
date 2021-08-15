@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-MyfirstgraphqlserverApplication<myfirstgraphqlserver>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "mainClass": "io.azran.myfirstgraphqlserver.MyfirstgraphqlserverApplication",
+      "projectName": "myfirstgraphqlserver",
+      "args": ""
+    }
+  ]
+}
