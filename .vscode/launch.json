@@ -2,6 +2,21 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch AuthorPostGraphqlServer",
+      "request": "launch",
+      "mainClass": "io.azran.myfirstgraphqlserver.graphql.blog.AuthorPostGraphqlServer",
+      "projectName": "myfirstgraphqlserver"
+    },
+    {
+      "type": "java",
+      "name": "Launch AuthorPostGraphqlServer",
+      "request": "launch",
+      "mainClass": "io.azran.myfirstgraphqlserver.graphql.AuthorPostGraphqlServer",
+      "projectName": "myfirstgraphqlserver",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-MyfirstgraphqlserverApplication<myfirstgraphqlserver>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
