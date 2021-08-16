@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Import;
 @EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
 public class AuthorPostGraphqlServer {
     public static void main(String[] args) {
-        System.setProperty("spring.config.name", "my graphql");
         SpringApplication.run(AuthorPostGraphqlServer.class, args);
     }
 }

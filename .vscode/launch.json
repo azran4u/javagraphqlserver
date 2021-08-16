@@ -2,18 +2,24 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch AuthorPostGraphqlServer",
+      "name": "Launch BlogErrorHandlingGraphqlServer",
       "request": "launch",
-      "mainClass": "io.azran.myfirstgraphqlserver.graphql.blog.AuthorPostGraphqlServer",
+      "mainClass": "io.azran.myfirstgraphqlserver.graphql.blogerrorhandling.BlogErrorHandlingGraphqlServer",
       "projectName": "myfirstgraphqlserver"
     },
     {
       "type": "java",
       "name": "Launch AuthorPostGraphqlServer",
       "request": "launch",
-      "mainClass": "io.azran.myfirstgraphqlserver.graphql.AuthorPostGraphqlServer",
-      "projectName": "myfirstgraphqlserver",
-      "console": "integratedTerminal"
+      "mainClass": "io.azran.myfirstgraphqlserver.graphql.blogerrorhandling.AuthorPostGraphqlServer",
+      "projectName": "myfirstgraphqlserver"
+    },
+    {
+      "type": "java",
+      "name": "Launch AuthorPostGraphqlServer",
+      "request": "launch",
+      "mainClass": "io.azran.myfirstgraphqlserver.graphql.blog.AuthorPostGraphqlServer",
+      "projectName": "myfirstgraphqlserver"
     },
     {
       "type": "java",
