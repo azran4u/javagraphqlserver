@@ -7,6 +7,7 @@ import graphql.kickstart.tools.GraphQLResolver;
 import io.azran.myfirstgraphqlserver.graphql.blogerrorhandling.model.Author;
 import io.azran.myfirstgraphqlserver.graphql.blogerrorhandling.model.Post;
 import io.azran.myfirstgraphqlserver.graphql.blogerrorhandling.service.AuthorService;
+
 import lombok.AllArgsConstructor;
 
 @Component

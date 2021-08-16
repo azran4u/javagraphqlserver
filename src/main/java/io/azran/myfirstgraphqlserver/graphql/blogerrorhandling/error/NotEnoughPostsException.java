@@ -9,11 +9,11 @@ import graphql.ErrorType;
 import graphql.GraphQLError;
 import graphql.language.SourceLocation;
 
-public class UserNotFoundException extends RuntimeException implements GraphQLError {
+public class NotEnoughPostsException extends RuntimeException implements GraphQLError {
 
     private String invalidField;
 
-    public UserNotFoundException(String message, String invalidField) {
+    public NotEnoughPostsException(String message, String invalidField) {
         super(message);
         this.invalidField = invalidField;
     }
@@ -24,16 +24,6 @@ public class UserNotFoundException extends RuntimeException implements GraphQLEr
     }
 
     @Override
-    public List<Object> getPath() {
-        return null;
-    }
-
-    @Override
-    public List<SourceLocation> getLocations() {
-        return null;
-    }
-
-    @Override
     public ErrorClassification getErrorType() {
         return ErrorType.ValidationError;
     }
@@ -41,6 +31,16 @@ public class UserNotFoundException extends RuntimeException implements GraphQLEr
     @Override
     public Map<String, Object> getExtensions() {
         return Collections.singletonMap("invalidField", invalidField);
+    }
+
+    @Override
+    public List<Object> getPath() {
+        return null;
+    }
+
+    @Override
+    public List<SourceLocation> getLocations() {
+        return null;
     }
 
 }

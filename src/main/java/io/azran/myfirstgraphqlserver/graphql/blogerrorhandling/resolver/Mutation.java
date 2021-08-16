@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 
 @Component
 @AllArgsConstructor
-public class PostMutation implements GraphQLMutationResolver {
+public class Mutation implements GraphQLMutationResolver {
 
     @Autowired
     private PostService postService;
