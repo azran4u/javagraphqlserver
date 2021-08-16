@@ -17,6 +17,13 @@
 		<graphql.version>11.0.0</graphql.version>
 	</properties>
 	<dependencies>
+
+ 	<dependency>
+ 		<groupId>com.graphql-java</groupId>
+ 		<artifactId>graphql-java-extended-validation</artifactId>
+ 		<version>16.0.0</version>
+ 	</dependency>
+
 	
 	 <dependency>
       <groupId>com.graphql-java-kickstart</groupId>

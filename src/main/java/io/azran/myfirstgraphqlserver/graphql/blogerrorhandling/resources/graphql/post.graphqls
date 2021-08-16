@@ -14,7 +14,7 @@ type Author {
 }
 
 type Query {
-  recentPosts(count: Int, offset: Int): [Post]!
+  recentPosts(count: Int @Min(value: 0), offset: Int): [Post]!
 }
 
 type Mutation {

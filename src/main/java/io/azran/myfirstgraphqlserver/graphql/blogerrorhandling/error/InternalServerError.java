@@ -1,6 +1,5 @@
 package io.azran.myfirstgraphqlserver.graphql.blogerrorhandling.error;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -9,13 +8,10 @@ import graphql.ErrorType;
 import graphql.GraphQLError;
 import graphql.language.SourceLocation;
 
-public class NotEnoughPostsException extends RuntimeException implements GraphQLError {
+public class InternalServerError extends RuntimeException implements GraphQLError {
 
-    private String invalidField;
-
-    public NotEnoughPostsException(String message, String invalidField) {
-        super(message);
-        this.invalidField = invalidField;
+    public InternalServerError() {
+        super("internal server error");
     }
 
     @Override
@@ -25,12 +21,12 @@ public class NotEnoughPostsException extends RuntimeException implements GraphQL
 
     @Override
     public ErrorClassification getErrorType() {
-        return ErrorType.ValidationError;
+        return ErrorType.ExecutionAborted;
     }
 
     @Override
     public Map<String, Object> getExtensions() {
-        return Collections.singletonMap("invalidField", invalidField);
+        return null;
     }
 
     @Override
